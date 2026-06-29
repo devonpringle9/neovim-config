@@ -1,0 +1,23 @@
+Favourite Vim shortcuts:
+
+Go back (older)     - ctrl + o
+Go forward (newer)  - ctrl + i
+
+Move page down (one)    - ctrl + e
+Move page up (one)      - ctrl + y
+Move page up (half)      - ctrl + u
+Move page down (half)      - ctrl + d
+
+
+Nvim keymaps:
+
+Find files          - <leader>ff
+    - up in search      - ctrl + p
+    - down in search    - ctrl + n
+Find word           - <leader>fw
+Grep directory      - <leader>fg
+
+Git blame           - <leader>gb
+
+Go to definition    - <leader>gd
+
