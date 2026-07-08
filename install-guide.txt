@@ -1,0 +1,18 @@
+#install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+
+# install neovim through brew (apt installs old version)
+brew install neovim
+
+# make .config/nvim directory
+mkdir -p ~/.config/nvim
+
+# dependencies
+sudo apt install luarocks -y
+sudo luarocks install jsregexp
+sudo apt install golang-go -y
+sudo apt install ripgrep -y
+sudo apt install npm -y
