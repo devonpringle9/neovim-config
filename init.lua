@@ -1,6 +1,5 @@
 -- Enable line numbers and relative numbers to jump to other lines on the screen using relative counts
 vim.opt.number = true
-vim.opt.relativenumber = true
 
 -- We also want the ability to undo changes after exiting and reopening the file
 vim.opt.undofile = true
