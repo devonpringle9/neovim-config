@@ -16,3 +16,6 @@ sudo luarocks install jsregexp
 sudo apt install golang-go -y
 sudo apt install ripgrep -y
 sudo apt install npm -y
+
+# for java lsp
+brew install maven
