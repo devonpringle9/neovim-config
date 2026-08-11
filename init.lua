@@ -37,6 +37,9 @@ vim.g.netrw_localcopydircmd = 'cp -r'
 -- shortcut for <ESC> to escape insert mode
 vim.keymap.set("i", "jk", "<ESC>")
 
+-- make a new tab of the current window (close window to restore)
+vim.keymap.set("n", '<F3>', ":tab split<cr>")
+
 -- default colourscheme saved as 'vscode' in 'plugins/colourscheme-vscode.lua'
 
 -- lazy.nvim is by far the best plugin manager for Neovim. It's fast, easy to use, feature-rich, and unmatched in its ability to lazy-load plugins for significantly better performance (hence the name)
