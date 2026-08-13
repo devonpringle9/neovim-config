@@ -40,6 +40,11 @@ vim.keymap.set("i", "jk", "<ESC>")
 -- make a new tab of the current window (close window to restore)
 vim.keymap.set("n", '<F3>', ":tab split<cr>")
 
+-- toggle error diagnostics
+vim.keymap.set('n', '<leader>td', function()
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = 'Toggle Diagnostics' })
+--
 -- default colourscheme saved as 'vscode' in 'plugins/colourscheme-vscode.lua'
 
 -- lazy.nvim is by far the best plugin manager for Neovim. It's fast, easy to use, feature-rich, and unmatched in its ability to lazy-load plugins for significantly better performance (hence the name)
