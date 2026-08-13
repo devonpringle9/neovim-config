@@ -40,6 +40,9 @@ vim.keymap.set("i", "jk", "<ESC>")
 -- make a new tab of the current window (close window to restore)
 vim.keymap.set("n", '<F3>', ":tab split<cr>")
 
+-- default to no diagnostics appearing
+vim.diagnostic.enable(false)
+
 -- toggle error diagnostics
 vim.keymap.set('n', '<leader>td', function()
   vim.diagnostic.enable(not vim.diagnostic.is_enabled())
