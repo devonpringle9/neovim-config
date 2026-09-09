@@ -20,3 +20,5 @@ sudo apt install fd-find -y
 
 # for java lsp
 brew install maven
+brew install tree-sitter
+brew install tree-sitter-cli
