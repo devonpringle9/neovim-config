@@ -1,0 +1,23 @@
+return {
+  "nvim-tree/nvim-tree.lua",
+  lazy = false,
+  config = function()
+    require("nvim-tree").setup({
+      sort = {
+        sorter = "case_sensitive",
+      },
+      view = {
+        width = 30,
+      },
+      renderer = {
+        group_empty = true,
+      },
+      filters = {
+        dotfiles = false,
+      },
+    })
+
+    -- Keymaps
+    vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle file explorer" })
+  end,
+}
